@@ -1,0 +1,150 @@
+{
+  "summary": {
+    "claimant_name": {
+      "agentic_precision": 0.9266666666666666,
+      "agentic_recall": 0.9266666666666666,
+      "agentic_f1": 0.9266666666666666,
+      "baseline_precision": 1.0,
+      "baseline_recall": 1.0,
+      "baseline_f1": 1.0,
+      "agentic_counts": {
+        "tp": 556,
+        "fp": 44,
+        "fn": 44
+      },
+      "baseline_counts": {
+        "tp": 600,
+        "fp": 0,
+        "fn": 0
+      }
+    },
+    "policy_type": {
+      "agentic_precision": 1.0,
+      "agentic_recall": 1.0,
+      "agentic_f1": 1.0,
+      "baseline_precision": 1.0,
+      "baseline_recall": 1.0,
+      "baseline_f1": 1.0,
+      "agentic_counts": {
+        "tp": 600,
+        "fp": 0,
+        "fn": 0
+      },
+      "baseline_counts": {
+        "tp": 600,
+        "fp": 0,
+        "fn": 0
+      }
+    },
+    "claim_amount": {
+      "agentic_precision": 1.0,
+      "agentic_recall": 1.0,
+      "agentic_f1": 1.0,
+      "baseline_precision": 1.0,
+      "baseline_recall": 1.0,
+      "baseline_f1": 1.0,
+      "agentic_counts": {
+        "tp": 600,
+        "fp": 0,
+        "fn": 0
+      },
+      "baseline_counts": {
+        "tp": 600,
+        "fp": 0,
+        "fn": 0
+      }
+    },
+    "incident_date": {
+      "agentic_precision": 1.0,
+      "agentic_recall": 1.0,
+      "agentic_f1": 1.0,
+      "baseline_precision": 1.0,
+      "baseline_recall": 1.0,
+      "baseline_f1": 1.0,
+      "agentic_counts": {
+        "tp": 600,
+        "fp": 0,
+        "fn": 0
+      },
+      "baseline_counts": {
+        "tp": 600,
+        "fp": 0,
+        "fn": 0
+      }
+    },
+    "priority": {
+      "agentic_precision": 0.44666666666666666,
+      "agentic_recall": 0.44666666666666666,
+      "agentic_f1": 0.44666666666666666,
+      "baseline_precision": 0.37666666666666665,
+      "baseline_recall": 0.37666666666666665,
+      "baseline_f1": 0.37666666666666665,
+      "agentic_counts": {
+        "tp": 268,
+        "fp": 332,
+        "fn": 332
+      },
+      "baseline_counts": {
+        "tp": 226,
+        "fp": 374,
+        "fn": 374
+      }
+    }
+  },
+  "metrics_raw": {
+    "agentic": {
+      "claimant_name": {
+        "tp": 556,
+        "fp": 44,
+        "fn": 44
+      },
+      "policy_type": {
+        "tp": 600,
+        "fp": 0,
+        "fn": 0
+      },
+      "claim_amount": {
+        "tp": 600,
+        "fp": 0,
+        "fn": 0
+      },
+      "incident_date": {
+        "tp": 600,
+        "fp": 0,
+        "fn": 0
+      },
+      "priority": {
+        "tp": 268,
+        "fp": 332,
+        "fn": 332
+      }
+    },
+    "baseline": {
+      "claimant_name": {
+        "tp": 600,
+        "fp": 0,
+        "fn": 0
+      },
+      "policy_type": {
+        "tp": 600,
+        "fp": 0,
+        "fn": 0
+      },
+      "claim_amount": {
+        "tp": 600,
+        "fp": 0,
+        "fn": 0
+      },
+      "incident_date": {
+        "tp": 600,
+        "fp": 0,
+        "fn": 0
+      },
+      "priority": {
+        "tp": 226,
+        "fp": 374,
+        "fn": 374
+      }
+    }
+  }
+}

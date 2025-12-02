@@ -1,0 +1,85 @@
+{
+  "raw_texts": [
+    "On 2024-06-05, I, Sarah Martinez, was driving my 2021 Toyota Corolla on Route 7 near the Tyson\u2019s Corner exit when another driver ran a red light and hit the front passenger side of my vehicle. The police arrived at the scene and completed an accident report. My auto policy number with Horizon Auto Insurance is AUT-4429817, which includes collision and comprehensive coverage. The body shop provided an estimated repair cost of $5,480 to replace the bumper, headlight assembly, and front fender. I also paid $150 out of pocket for towing. I am filing this claim to cover the full repair costs associated with this collision."
+  ],
+  "extracted_fields": {
+    "claimant_name": "Sarah Martinez",
+    "policy_type": "Auto",
+    "claim_amount": 5480.0,
+    "incident_date": "2024-06-05"
+  },
+  "triage": {
+    "priority": "Medium",
+    "claim_type": "Auto"
+  },
+  "summary": "[LLM disabled] Would have answered based on: '\\nYou are an insurance claim summarization assistant.\\n\\nOriginal text:\\nOn 2024-06-05, I, Sarah Martinez, was driving my 2021 Toyota Corolla on Route 7 near the Tyson\u2019s Corner exit when another driver ra'",
+  "issues": [
+    "LLM-note: [LLM disabled] Would have answered based on: '\\nYou are a claims QA checker.\\n\\nText:\\nOn 2024-06-05, I, Sarah Martinez, was driving my 2021 Toyota Corolla on Route 7 near the Tyson\u2019s Corner exit when another driver ran a red light and hit the front '"
+  ],
+  "trace": [
+    {
+      "timestamp": "2025-12-02 04:31:40",
+      "agent": "ExtractionAgent",
+      "action": "extract_fields",
+      "info": {
+        "entities": [
+          [
+            "Sarah Martinez",
+            "PER"
+          ],
+          [
+            "Toyota Corolla",
+            "MISC"
+          ],
+          [
+            "Route",
+            "LOC"
+          ],
+          [
+            "7",
+            "MISC"
+          ],
+          [
+            "Tyson \u2019 s Corner",
+            "LOC"
+          ],
+          [
+            "Horizon Auto Insurance",
+            "ORG"
+          ]
+        ],
+        "policy_guess": "Auto",
+        "claimant_name": "Sarah Martinez",
+        "claim_amount": 5480.0,
+        "incident_date": "2024-06-05"
+      }
+    },
+    {
+      "timestamp": "2025-12-02 04:31:40",
+      "agent": "ValidationAgent",
+      "action": "validate_fields",
+      "info": {
+        "issues": [],
+        "llm_note_present": true
+      }
+    },
+    {
+      "timestamp": "2025-12-02 04:31:40",
+      "agent": "TriageAgent",
+      "action": "assign_triage",
+      "info": {
+        "priority": "Medium",
+        "claim_type": "Auto",
+        "amount": 5480.0
+      }
+    },
+    {
+      "timestamp": "2025-12-02 04:31:40",
+      "agent": "SummarizationAgent",
+      "action": "summarize_claim",
+      "info": {
+        "summary_preview": "[LLM disabled] Would have answered based on: '\\nYou are an insurance claim summarization assistant.\\n\\nOriginal text:\\nO"
+      }
+    }
+  ]
+}
