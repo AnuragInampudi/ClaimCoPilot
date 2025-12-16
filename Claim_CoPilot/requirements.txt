@@ -1,17 +1,7 @@
-# ClaimCopilot (CS 678 Project)
+# Core libraries for ClaimCopilot project
 
-An agentic workflow for insurance claim understanding and triage.
-
-## Setup
-
-```bash
-git clone <your-repo-url>
-cd Claim_CoPilot
-
-python -m venv .venv
-# macOS/Linux:
-source .venv/bin/activate
-# Windows:
-.venv\\Scripts\\activate
-
-pip install -r requirements.txt
+openai
+transformers
+python-dotenv
+tqdm
+scikit-learn
